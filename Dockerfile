@@ -1,9 +1,9 @@
 FROM library/debian:wheezy
 MAINTAINER Juan <jgonz@kk.mail>
-# Minimal changes to httpd
-RUN  echo "nameserver 10.27.100.2" > /etc/resolv.conf && \
-apt-get update && \
-apt-get -y upgrade && \
+## Minimal changes to httpd
+#RUN  echo "nameserver 10.27.100.2" > /etc/resolv.conf && \
+RUN apt-get update && \
+ apt-get -y upgrade && \
 apt-get install -y iputils-ping netcat-traditional && \
 apt-get clean && apt-get autoclean && \
- rm -rf /var/lib/apt/lists/*
+rm -rf /var/lib/apt/lists/*
