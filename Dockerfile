@@ -9,5 +9,5 @@ apt-get clean && apt-get autoclean && \
 rm -rf /var/lib/apt/lists/*
 VOLUME ["/miVolum1"]
 #RUN apt-get install -y mplayer
-ENTRYPOINT ["mplayer","/miVolum1/frank.mp3"]
+#ENTRYPOINT ["mplayer","/miVolum1/frank.mp3"]
 
