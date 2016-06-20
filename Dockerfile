@@ -7,5 +7,5 @@ RUN apt-get update && \
 apt-get install -y iputils-ping netcat-traditional && \
 apt-get clean && apt-get autoclean && \
 rm -rf /var/lib/apt/lists/*
-VOLUME ["/miVolum1:/miVolum1"]
+VOLUME ["/miVolum1"]
 
